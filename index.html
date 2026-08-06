@@ -104,6 +104,13 @@ h2 {
 .link-list p {
     margin-bottom: 0.5em;
 }
+.link-list {
+    display: flex;
+    gap: 2em;
+}
+.link-col {
+    flex: 1;
+}
 
 @media (min-width: 850px) {
 .top-links {
@@ -189,7 +196,7 @@ h2 {
       A cellular automata puzzle game. Design rules to grow a seed into the correct shape.<br>
       Submission to <a href="https://itch.io/jam/lowrezjam-2024" target="_blank" rel="noopener noreferrer">LOWREZJAM 2024</a>. <br>
       <br>
-      <a href="https://quintin-steiner.itch.io/rust-vault" target="_blank" rel="noopener">itch.io</a> </div>
+      <a href="https://quintin-steiner.itch.io/hox" target="_blank" rel="noopener">itch.io</a> </div>
     <div class="row-img"><img src="images/small_games/HOX.png" alt="HOX"></div>
   </div>
   <div class="row compact-img">
@@ -199,7 +206,7 @@ h2 {
       Submission to <a href="https://itch.io/jam/acerola-jam-0" target="_blank" rel="noopener noreferrer">Acerola Jam 0</a>. <br>
       <br>
       <a href="https://quintin-steiner.itch.io/splice-core" target="_blank" rel="noopener">itch.io</a> </div>
-    <div class="row-img"><img src="images/small_games/Splice_Core.png" alt="Splice Core"></div>
+    <div class="row-img"><img src="images/small_games/SPLICE_CORE.png" alt="Splice Core"></div>
   </div>
   <div class="row compact-img">
     <div class="row-text">
@@ -214,25 +221,28 @@ h2 {
   <!-- Influential Games -->
   <h1>─────── Influential Games ───────</h1>
   <div class="link-list">
-    <p><a href="https://store.steampowered.com/app/753640/Outer_Wilds/" target="_blank" rel="noopener noreferrer">Outer Wilds</a> ─ An open-world mystery about a solar system trapped in an endless time loop.</p>
-    <p><a href="https://store.steampowered.com/app/620/Portal_2/" target="_blank" rel="noopener noreferrer">Portal 2</a> ─ A first-person puzzle game built around a portal-shooting gun and dark humor.</p>
-    <p><a href="https://store.steampowered.com/app/219890/Antichamber/" target="_blank" rel="noopener noreferrer">Antichamber</a> ─ A mind-bending psychological exploration game based on non-Euclidean space.</p>
-    <p><a href="https://store.steampowered.com/app/210970/The_Witness/" target="_blank" rel="noopener noreferrer">The Witness</a> ─ An open-world puzzle game set on a mysterious, abandoned island.</p>
-    <p><a href="https://store.steampowered.com/app/813230/ANIMAL_WELL/" target="_blank" rel="noopener noreferrer">Animal Well</a> ─ A pixelated metroidvania about spelunking through a strange, secret-filled well.</p>
-    <p><a href="https://store.steampowered.com/app/1092790/Inscryption/" target="_blank" rel="noopener noreferrer">Inscryption</a> ─ A card-based roguelike wrapped in dark, unsettling psychological horror.</p>
-    <p><a href="https://store.steampowered.com/app/257510/The_Talos_Principle/" target="_blank" rel="noopener noreferrer">The Talos Principle</a> ─ A philosophical first-person puzzle game about a robot exploring an ancient world.</p>
-    <p><a href="https://store.steampowered.com/app/553420/TUNIC/" target="_blank" rel="noopener noreferrer">Tunic</a> ─ An isometric action-adventure about a small fox exploring a land of monsters and secrets.</p>
-    <p><a href="https://store.steampowered.com/app/558990/Opus_Magnum/" target="_blank" rel="noopener noreferrer">Opus Magnum</a> ─ An alchemical engineering puzzle game about building intricate machines.</p>
-	  <br>
-    <p><a href="https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/" target="_blank" rel="noopener noreferrer">Dark Souls</a> ─ A brutal, atmospheric action RPG through a decaying dark fantasy world.</p>
-    <p><a href="https://store.steampowered.com/app/391540/Undertale/" target="_blank" rel="noopener noreferrer">Undertale</a> ─ A story-rich RPG where you can spare or fight every monster you encounter.</p>
-    <p><a href="https://store.steampowered.com/app/359870/FINAL_FANTASY_XX2_HD_Remaster/" target="_blank" rel="noopener noreferrer">Final Fantasy X</a> ─ A classic JRPG following Tidus's journey across the world of Spira.</p>
-    <p><a href="https://store.steampowered.com/app/70300/VVVVVV/" target="_blank" rel="noopener noreferrer">VVVVVV</a> ─ A retro-styled platformer built around gravity-flipping instead of jumping.</p>
-    <p><a href="https://store.steampowered.com/app/265690/NaissanceE/" target="_blank" rel="noopener noreferrer">NaissanceE</a> ─ An atmospheric first-person exploration game through vast, monolithic structures.</p>
-    <p><a href="https://store.steampowered.com/app/282140/SOMA/" target="_blank" rel="noopener noreferrer">SOMA</a> ─ A sci-fi horror game exploring identity and consciousness in an underwater facility.</p>
-    <p><a href="https://store.steampowered.com/app/356400/THUMPER/" target="_blank" rel="noopener noreferrer">Thumper</a> ─ A rhythm violence game that's part racing game, part rhythm-action nightmare.</p>
-    <p><a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank" rel="noopener noreferrer">Hollow Knight</a> ─ A challenging 2D metroidvania set in the ruined insect kingdom of Hallownest.</p>
-    <p><a href="https://store.steampowered.com/app/2124490/SILENT_HILL_2/" target="_blank" rel="noopener noreferrer">Silent Hill 2</a> ─ A psychological horror classic about a man searching a fog-drenched town for his dead wife.</p>
+  <div class="link-col">
+    <p><a href="https://store.steampowered.com/app/753640/Outer_Wilds/" target="_blank" rel="noopener noreferrer">Outer Wilds</a></p>
+    <p><a href="https://store.steampowered.com/app/620/Portal_2/" target="_blank" rel="noopener noreferrer">Portal 2</a></p>
+    <p><a href="https://store.steampowered.com/app/219890/Antichamber/" target="_blank" rel="noopener noreferrer">Antichamber</a></p>
+    <p><a href="https://store.steampowered.com/app/210970/The_Witness/" target="_blank" rel="noopener noreferrer">The Witness</a></p>
+    <p><a href="https://store.steampowered.com/app/813230/ANIMAL_WELL/" target="_blank" rel="noopener noreferrer">Animal Well</a></p>
+    <p><a href="https://store.steampowered.com/app/1092790/Inscryption/" target="_blank" rel="noopener noreferrer">Inscryption</a></p>
+    <p><a href="https://store.steampowered.com/app/257510/The_Talos_Principle/" target="_blank" rel="noopener noreferrer">The Talos Principle</a></p>
+    <p><a href="https://store.steampowered.com/app/553420/TUNIC/" target="_blank" rel="noopener noreferrer">Tunic</a></p>
+    <p><a href="https://store.steampowered.com/app/558990/Opus_Magnum/" target="_blank" rel="noopener noreferrer">Opus Magnum</a></p>
+  </div>
+  <div class="link-col">
+    <p><a href="https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/" target="_blank" rel="noopener noreferrer">Dark Souls</a></p>
+    <p><a href="https://store.steampowered.com/app/391540/Undertale/" target="_blank" rel="noopener noreferrer">Undertale</a></p>
+    <p><a href="https://store.steampowered.com/app/359870/FINAL_FANTASY_XX2_HD_Remaster/" target="_blank" rel="noopener noreferrer">Final Fantasy X</a></p>
+    <p><a href="https://store.steampowered.com/app/70300/VVVVVV/" target="_blank" rel="noopener noreferrer">VVVVVV</a></p>
+    <p><a href="https://store.steampowered.com/app/265690/NaissanceE/" target="_blank" rel="noopener noreferrer">NaissanceE</a></p>
+    <p><a href="https://store.steampowered.com/app/282140/SOMA/" target="_blank" rel="noopener noreferrer">SOMA</a></p>
+    <p><a href="https://store.steampowered.com/app/356400/THUMPER/" target="_blank" rel="noopener noreferrer">Thumper</a></p>
+    <p><a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank" rel="noopener noreferrer">Hollow Knight</a></p>
+    <p><a href="https://store.steampowered.com/app/2124490/SILENT_HILL_2/" target="_blank" rel="noopener noreferrer">Silent Hill 2</a></p>
+  </div>
   </div>
 </div>
 <!-- root -->
