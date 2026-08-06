@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quintin Steiner</title>
+<link rel="icon" type="image/png" href="images/Ghost.png">
+<style>
+:root {
+--bg:        #0C0C0C;
+--bg-panel:  #661402;
+--text:      #E5E5E5;
+--link:      #E5E5E5;
+--accent:    #ce3c1b;
+--header-text: #ce3c1b;
+--font-body: 'Lato', sans-serif;
+--max-width: 50em;
+--gap:       1.5em;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 1.05em;
+    line-height: 1.5;
+    margin: 0 1em;
+}
+a {
+    color: var(--link);
+}
+a:hover {
+    color: var(--accent);
+}
+.root {
+    max-width: var(--max-width);
+    margin: 1em auto;
+}
+/* Logo / avatar */
+.avatar {
+    display: block;
+    width: 6em;
+    aspect-ratio: 1 / 1;
+    margin: 1em 0 1em auto;
+}
+/* Section headers */
+h1 {
+    /*font-size: 1.75em;*/
+    font-size: 1.6em;
+    color: var(--header-text);
+    /*background-color: var(--bg-panel);*/
+    padding: 0.1em 0.2em 0.1em 0.5em;
+    margin: 2em 0 2em 0;
+    text-align: center;
+}
+h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.6em;
+}
+/* Top contact / social bar */
+.top-links {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-panel);
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+}
+.top-links p {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.25em 0;
+}
+.top-links img {
+    width: 1.5em;
+    height: 1.5em;
+}
+/* Bio */
+.bio {
+    margin-bottom: 1em;
+}
+.bio p + p {
+    margin-top: 1em;
+}
+/* Reusable "row" block: text / image */
+.row {
+    display: block;
+    margin-bottom: var(--gap);
+}
+.row-img img {
+    width: 100%;
+    margin-top: 1em;
+    border: 2px solid #303030;
+}
+.row.compact-img .row-img img {
+    width: auto;
+    height: 8em;
+    margin-top: 1em;
+}
+/* Simple link lists */
+.link-list p {
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 850px) {
+.top-links {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row {
+    display: flex;
+    gap: 1.5em;
+}
+.row-text {
+    flex: 1 1 60%;
+}
+.row-img {
+    flex: 1 1 40%;
+    margin-top: 0;
+}
+.row-img img {
+    margin-top: 0;
+    border: 2px solid #303030;
+}
+.row.compact-img .row-img {
+    flex: 0 0 auto;
+}
+}
+</style>
+</head>
+
+<body>
+<div class="root"> 
+  <!-- HEADER --> 
+  <img class="avatar" src="images/Ghost.png" alt="Your logo or photo">
+  <div class="top-links">
+    <p><img src="images/email.png" alt=""><a href="mailto:quintinsteinergames@gmail.com">quintinsteinergames@gmail.com</a></p>
+    <p><img src="images/bluesky.png" alt=""><a href="https://bsky.app/profile/quintin-steiner.bsky.social">@quintin-steiner.bsky.social</a></p>
+    <p><img src="images/twitter.svg" alt=""><a href="https://x.com/quintinsdev">@quintinsdev</a></p>
+  </div>
+  
+  <!-- BIO -->
+  <div class="bio">
+    <p>Hi! I'm Quintin, an independent game developer. I love creating and playing video games, especially the puzzly, mysterious, and atmospheric kinds. I also write and produce music now and then.</p>
+    <p>I'm currently working on SubDuctis, a puzzle game about folding space.</p>
+  </div>
+  
+  <!-- BIG PROJECTS  -->
+  <h1>─────── Games ───────</h1>
+  <div class="row">
+    <div class="row-text">
+      <h2>SubDuctis</h2>
+      <p> A chrome coated, Sokoban-style puzzle game about <i>space folding</i>. Bypass obstacles, form conductive paths, and discover new areas. Explore an expanding nonlinear world full of puzzles, suprises, and secrets.<br>
+        Set to release in Q2 2027. Add it to your Steam wishlist to support development and get updates! <br>
+        <br>
+        <a href="#">Steam</a><br>
+        <a href="#">itch.io</a><br>
+        <a href="#">Website</a> </p>
+    </div>
+    <div class="row-img"><img src="images/big_games/SubDuctis.png" alt=""></div>
+  </div>
+  
+  <!-- SMALL PROJECTS -->
+  <h1>─────── Game Jam Entries ───────</h1>
+  <div class="row compact-img">
+    <div class="row-text">
+      <h2>Rust Vault</h2>
+      A dark puzzle platforming adventure featuring a grapple hook.<br>
+      Submission to <a href="https://itch.io/jam/scream-jam-2025" target="_blank" rel="noopener noreferrer">Scream Jam 2025</a>. <br>
+      <br>
+      <a href="https://quintin-steiner.itch.io/rust-vault" target="_blank" rel="noopener">itch.io</a> </div>
+    <div class="row-img"><img src="images/small_games/Rust_Vault.png" alt="Rust Vault"></div>
+  </div>
+  <div class="row compact-img">
+    <div class="row-text">
+      <h2>Palindrome Cave</h2>
+      A short cave diving horror game.<br>
+      Submission to <a href="https://itch.io/jam/scream-jam-2024" target="_blank" rel="noopener noreferrer">Scream Jam 2024</a>. <br>
+      <br>
+      <a href="https://quintin-steiner.itch.io/palindrome-cave" target="_blank" rel="noopener">itch.io</a> </div>
+    <div class="row-img"><img src="images/small_games/Palindrome_Cave.png" alt="Palindrome Cave"></div>
+  </div>
+  <div class="row compact-img">
+    <div class="row-text">
+      <h2>HOX</h2>
+      A cellular automata puzzle game. Design rules to grow a seed into the correct shape.<br>
+      Submission to <a href="https://itch.io/jam/lowrezjam-2024" target="_blank" rel="noopener noreferrer">LOWREZJAM 2024</a>. <br>
+      <br>
+      <a href="https://quintin-steiner.itch.io/rust-vault" target="_blank" rel="noopener">itch.io</a> </div>
+    <div class="row-img"><img src="images/small_games/HOX.png" alt="HOX"></div>
+  </div>
+  <div class="row compact-img">
+    <div class="row-text">
+      <h2>SPLICE CORE</h2>
+      A space folding, sokoban-style puzzle game. The original jam build of SubDuctis.<br>
+      Submission to <a href="https://itch.io/jam/acerola-jam-0" target="_blank" rel="noopener noreferrer">Acerola Jam 0</a>. <br>
+      <br>
+      <a href="https://quintin-steiner.itch.io/splice-core" target="_blank" rel="noopener">itch.io</a> </div>
+    <div class="row-img"><img src="images/small_games/Splice_Core.png" alt="Splice Core"></div>
+  </div>
+  <div class="row compact-img">
+    <div class="row-text">
+      <h2>ProcGrotto</h2>
+      A procedural cave generator.<br>
+      Submission to <a href="https://itch.io/jam/procjam2024" target="_blank" rel="noopener noreferrer">PROCJAM 2024</a>. <br>
+      <br>
+      <a href="https://quintin-steiner.itch.io/procgrotto" target="_blank" rel="noopener">itch.io</a> </div>
+    <div class="row-img"><img src="images/small_games/ProcGrotto.png" alt="ProcGrotto"></div>
+  </div>
+  
+  <!-- Influential Games -->
+  <h1>─────── Influential Games ───────</h1>
+  <div class="link-list">
+    <p><a href="https://store.steampowered.com/app/753640/Outer_Wilds/" target="_blank" rel="noopener noreferrer">Outer Wilds</a> ─ An open-world mystery about a solar system trapped in an endless time loop.</p>
+    <p><a href="https://store.steampowered.com/app/620/Portal_2/" target="_blank" rel="noopener noreferrer">Portal 2</a> ─ A first-person puzzle game built around a portal-shooting gun and dark humor.</p>
+    <p><a href="https://store.steampowered.com/app/219890/Antichamber/" target="_blank" rel="noopener noreferrer">Antichamber</a> ─ A mind-bending psychological exploration game based on non-Euclidean space.</p>
+    <p><a href="https://store.steampowered.com/app/210970/The_Witness/" target="_blank" rel="noopener noreferrer">The Witness</a> ─ An open-world puzzle game set on a mysterious, abandoned island.</p>
+    <p><a href="https://store.steampowered.com/app/813230/ANIMAL_WELL/" target="_blank" rel="noopener noreferrer">Animal Well</a> ─ A pixelated metroidvania about spelunking through a strange, secret-filled well.</p>
+    <p><a href="https://store.steampowered.com/app/1092790/Inscryption/" target="_blank" rel="noopener noreferrer">Inscryption</a> ─ A card-based roguelike wrapped in dark, unsettling psychological horror.</p>
+    <p><a href="https://store.steampowered.com/app/257510/The_Talos_Principle/" target="_blank" rel="noopener noreferrer">The Talos Principle</a> ─ A philosophical first-person puzzle game about a robot exploring an ancient world.</p>
+    <p><a href="https://store.steampowered.com/app/553420/TUNIC/" target="_blank" rel="noopener noreferrer">Tunic</a> ─ An isometric action-adventure about a small fox exploring a land of monsters and secrets.</p>
+    <p><a href="https://store.steampowered.com/app/558990/Opus_Magnum/" target="_blank" rel="noopener noreferrer">Opus Magnum</a> ─ An alchemical engineering puzzle game about building intricate machines.</p>
+	  <br>
+    <p><a href="https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/" target="_blank" rel="noopener noreferrer">Dark Souls</a> ─ A brutal, atmospheric action RPG through a decaying dark fantasy world.</p>
+    <p><a href="https://store.steampowered.com/app/391540/Undertale/" target="_blank" rel="noopener noreferrer">Undertale</a> ─ A story-rich RPG where you can spare or fight every monster you encounter.</p>
+    <p><a href="https://store.steampowered.com/app/359870/FINAL_FANTASY_XX2_HD_Remaster/" target="_blank" rel="noopener noreferrer">Final Fantasy X</a> ─ A classic JRPG following Tidus's journey across the world of Spira.</p>
+    <p><a href="https://store.steampowered.com/app/70300/VVVVVV/" target="_blank" rel="noopener noreferrer">VVVVVV</a> ─ A retro-styled platformer built around gravity-flipping instead of jumping.</p>
+    <p><a href="https://store.steampowered.com/app/265690/NaissanceE/" target="_blank" rel="noopener noreferrer">NaissanceE</a> ─ An atmospheric first-person exploration game through vast, monolithic structures.</p>
+    <p><a href="https://store.steampowered.com/app/282140/SOMA/" target="_blank" rel="noopener noreferrer">SOMA</a> ─ A sci-fi horror game exploring identity and consciousness in an underwater facility.</p>
+    <p><a href="https://store.steampowered.com/app/356400/THUMPER/" target="_blank" rel="noopener noreferrer">Thumper</a> ─ A rhythm violence game that's part racing game, part rhythm-action nightmare.</p>
+    <p><a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank" rel="noopener noreferrer">Hollow Knight</a> ─ A challenging 2D metroidvania set in the ruined insect kingdom of Hallownest.</p>
+    <p><a href="https://store.steampowered.com/app/2124490/SILENT_HILL_2/" target="_blank" rel="noopener noreferrer">Silent Hill 2</a> ─ A psychological horror classic about a man searching a fog-drenched town for his dead wife.</p>
+  </div>
+</div>
+<!-- root -->
+</body>
+</html>
