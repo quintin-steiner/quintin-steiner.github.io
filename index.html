@@ -58,6 +58,15 @@ h1 {
     padding: 0.1em 0.2em 0.1em 0.5em;
     margin: 2em 0 2em 0;
     text-align: center;
+	align-items: center;
+	display: flex;
+}
+h1::before,
+h1::after {
+	content: '';
+	flex: 1;
+	border-bottom: 2px solid var(--header-text);
+	margin: 0 15px;
 }
 h2 {
     font-size: 1.6em;
@@ -159,7 +168,7 @@ h2 {
   </div>
   
   <!-- BIG PROJECTS  -->
-  <h1>─────── Games ───────</h1>
+  <h1>Games</h1>
   <div class="row">
     <div class="row-text">
       <h2>SubDuctis</h2>
@@ -173,7 +182,7 @@ h2 {
   </div>
   
   <!-- SMALL PROJECTS -->
-  <h1>─────── Game Jam Entries ───────</h1>
+  <h1>Game Jam Entries</h1>
   <div class="row compact-img">
     <div class="row-text">
       <h2>Rust Vault</h2>
@@ -221,7 +230,7 @@ h2 {
   </div>
   
   <!-- Influential Games -->
-  <h1>─────── Favorite & Influential Games ───────</h1>
+  <h1>Favorite & Influential Games</h1>
   <div class="link-list">
   <div class="link-col">
     <p><a href="https://store.steampowered.com/app/753640/Outer_Wilds/" target="_blank" rel="noopener noreferrer">Outer Wilds</a></p>
